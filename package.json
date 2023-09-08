@@ -1,11 +1,12 @@
 {
   "name": "newman-reporter-slackmsgcipta",
-  "version": "1.4",
-  "description": "newman reporter to slack",
+  "version": "1.4.2",
+  "description": "newman report to slack",
   "main": "index.js",
+
   "repository": {
     "type": "git",
-    "url": "https://github.com/ciptawili/newman-reporter-slackmsg/"
+    "url": "https://github.com/ciptawili/newman-reporter-slackmsg"
   },
   "keywords": [
     "newman",
@@ -14,7 +15,7 @@
     "newman reporter",
     "custom newman reporter"
   ],
-  "author": "cipta",
+  "author": "yuhu",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ciptawili/newman-reporter-slackmsg/issues"
@@ -22,7 +23,7 @@
   "homepage": "https://github.com/ciptawili/newman-reporter-slackmsg#readme",
   "dependencies": {
     "@types/node": "^14.0.13",
-    "axios": "^0.21.1",
+    "axios": "^0.19.2",
     "esm": "^3.2.25",
     "jsonminify": "^0.4.1",
     "pretty-ms": "^7.0.0"
