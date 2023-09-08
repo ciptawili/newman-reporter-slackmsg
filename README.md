@@ -12,29 +12,30 @@ or
 
 ## Installation
  ```CLI
- npm i -g newman-reporter-slackmsg
+ npm i -g newman-reporter-slackmsgcipta
  ```
 
 ## Usage
 ```CLI
- newman run <collectionFile> -e <environmentFile> --suppress-exit-code -r slackmsg --reporter-slackmsg-webhookurl '<webhookurl>'
+ newman run <collectionFile> -e <environmentFile> --suppress-exit-code -r slackmsgcipta --reporter-slackmsgcipta-webhookurl '<webhookurl>'
 ```
 
 ## Usage with channel override bot
 ```CLI
- newman run <collectionFile> -e <environmentFile> --suppress-exit-code -r slackmsg --reporter-slackmsg-webhookurl '<https://slack.com/api/chat.postMessage>' --reporter-slackmsg-token '<bearer token>' --reporter-slackmsg-channel '<channel or userid>'
+ newman run <collectionFile> -e <environmentFile> --suppress-exit-code -r slackmsgcipta --reporter-slackmsgcipta-webhookurl '<https://slack.com/api/chat.postMessage>' --reporter-slackmsgcipta-token '<bearer token>' --reporter-slackmsgcipta-channel '<channel or userid>'
 ```
 
 ## Reporter Options Optionals
 ```
- --reporter-slackmsg-messageSize '<messageSize>' e.g 150
- --reporter-slackmsg-token '<bearer token>' e.g xoxb-XXXXXXXXXXXX-TTTTTTTTTTTTTT
- --reporter-slackmsg-channel '<channel>' e.g #general
- --reporter-slackmsg-failuresChannel '<channel>' e.g. #alerts
- --reporter-slackmsg-collection '<collectionName> e.g test.json
- --reporter-slackmsg-environment '<environmentName> e.g env.json
- --reporter-slackmsg-reportingurl '<URL> e.g https://127.0.1/index.html
-  --reporter-slackmsg-limitFailures '<limitFailures>; e.g 5
+ --reporter-slackmsgcipta-messageSize '<messageSize>' e.g 150
+ --reporter-slackmsgcipta-token '<bearer token>' e.g xoxb-XXXXXXXXXXXX-TTTTTTTTTTTTTT
+ --reporter-slackmsgcipta-channel '<channel>' e.g #general
+ --reporter-slackmsgcipta-failuresChannel '<channel>' e.g. #alerts
+ --reporter-slackmsgcipta-collection '<collectionName> e.g test.json
+ --reporter-slackmsgcipta-environment '<environmentName> e.g env.json
+ --reporter-slackmsgcipta-reportingurl '<URL>' e.g https://127.0.1/index.html
+ --reporter-slackmsgcipta-modifymessage '<modifyMessage>' e.g this report
+  --reporter-slackmsgcipta-limitFailures '<limitFailures>; e.g 5
 
 ```
 
